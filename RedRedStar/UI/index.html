@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="iconfont.css">
+    <style>
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            line-height: 36px;
+        }
+
+        #titleBar {
+            height: 42px;
+            line-height: 42px;
+            background: #0099ff;
+            display: flex;
+        }
+
+        #titleBox {
+            flex: 1;
+            color: #fff;
+            padding-left: 16px;
+            user-select: none;
+            height: 42px;
+            line-height: 42px;
+        }
+
+        #btnBox {
+            display: flex;
+        }
+
+        .titleBtn {
+            line-height: 42px;
+            color: #fff;
+            text-align: center;
+            width: 46px;
+        }
+
+        .titleBtn:hover {
+            background: #007acc;
+            cursor: pointer;
+        }
+
+        #borderLeft {
+            position: absolute;
+            z-index: 999;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            width: 4px;
+            background: transparent;
+            cursor: ew-resize;
+        }
+
+        #borderTop {
+            position: absolute;
+            z-index: 999;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            height: 4px;
+            background: transparent;
+            cursor: ns-resize;
+        }
+
+        #borderRight {
+            position: absolute;
+            z-index: 999;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            width: 4px;
+            background: transparent;
+            cursor: ew-resize;
+        }
+
+        #borderBottom {
+            position: absolute;
+            z-index: 999;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 4px;
+            background: transparent;
+            cursor: ns-resize;
+        }
+
+        #cornerTopLeft {
+            position: absolute;
+            z-index: 999;
+            left: 0px;
+            top: 0px;
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            cursor: nwse-resize;
+        }
+
+        #cornerTopRight {
+            position: absolute;
+            z-index: 999;
+            right: 0px;
+            top: 0px;
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            cursor: nesw-resize;
+        }
+
+        #cornerBottomRight {
+            position: absolute;
+            z-index: 999;
+            right: 0px;
+            bottom: 0px;
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            cursor: nwse-resize;
+        }
+
+        #cornerBottomLeft {
+            position: absolute;
+            z-index: 999;
+            left: 0px;
+            bottom: 0px;
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            cursor: nesw-resize;
+        }
+
+        #contentBox {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titleBar">
+        <div id="titleBox">这是窗口标题</div>
+        <div id="btnBox">
+            <div id="minimizeBtn" class="titleBtn">
+                <i class="iconfont minimize"></i>
+            </div>
+            <div id="restoreBtn" class="titleBtn" style="display:none">
+                <i class="iconfont restore"></i>
+            </div>
+            <div id="maximizeBtn" class="titleBtn">
+                <i class="iconfont maximize"></i>
+            </div>
+            <div id="closeBtn" class="titleBtn">
+                <i class="iconfont close"></i>
+            </div>
+        </div>
+    </div>
+    <div id="contentBox">
+        <h2>这是示例页面</h2>
+    </div>
+    <div id="borderLeft"></div>
+    <div id="borderTop"></div>
+    <div id="borderRight"></div>
+    <div id="borderBottom"></div>
+    <div id="cornerTopLeft"></div>
+    <div id="cornerTopRight"></div>
+    <div id="cornerBottomRight"></div>
+    <div id="cornerBottomLeft"></div>
+</body>
+
+</html>

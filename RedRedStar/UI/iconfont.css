@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 3946765 */
+    src: url('iconfont.ttf?t=1759822867669') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.loading:before {
+  content: "\e891";
+}
+
+.Web:before {
+  content: "\e610";
+}
+
+.zishiyingdaxiao:before {
+  content: "\e6f8";
+}
+
+.24gl-folderOpen:before {
+  content: "\eabe";
+}
+
+.youjiantou:before {
+  content: "\e638";
+}
+
+.zuojiantou:before {
+  content: "\e60e";
+}
+
+.tupianyulanyoubianjiantou:before {
+  content: "\e6ad";
+}
+
+.11:before {
+  content: "\e6be";
+}
+
+.tupianyulanzuobianjiantou:before {
+  content: "\e6bf";
+}
+
+.xiazai:before {
+  content: "\e6c1";
+}
+
+.xuanzhuan:before {
+  content: "\e6c2";
+}
+
+.suoxiaojing:before {
+  content: "\e6bd";
+}
+
+.fangdajing:before {
+  content: "\e6c0";
+}
+
+.close:before {
+  content: "\e6e7";
+}
+
+.minimize:before {
+  content: "\e6e8";
+}
+
+.restore:before {
+  content: "\e6e9";
+}
+
+.maximize:before {
+  content: "\e6e5";
+}
+

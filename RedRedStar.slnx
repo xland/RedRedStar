@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="RedRedStar/RedRedStar.vcxproj" Id="50c6a95a-cb80-4d95-8f44-8994fbb63ce8" />
+</Solution>

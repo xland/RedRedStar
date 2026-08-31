@@ -1,0 +1,46 @@
+#define APSTUDIO_READONLY_SYMBOLS
+#include "winres.h"
+#undef APSTUDIO_READONLY_SYMBOLS
+
+// 嵌入的前端资源文件
+index.html RCDATA "UI/index.html"
+index.js RCDATA "UI/index.js"
+iconfont.css RCDATA "UI/iconfont.css"
+iconfont.ttf RCDATA "UI/iconfont.ttf"
+// 嵌入的应用程序图标
+//100 ICON "logo.ico"
+
+VS_VERSION_INFO VERSIONINFO
+// 配置可执行文件版本号
+FILEVERSION 0, 0, 1, 0
+PRODUCTVERSION 0, 0, 1, 0
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+	FILEFLAGS 0x1L
+#else
+	FILEFLAGS 0x0L
+#endif
+FILEOS 0x40004L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "080404b0"
+		BEGIN
+			// 配置可执行文件产品信息
+			VALUE "CompanyName", "GitHub xland"
+			VALUE "FileDescription", "WebView2Demo"
+			VALUE "FileVersion", "0.0.1.0"
+			VALUE "InternalName", "WebView2Demo.exe"
+			VALUE "LegalCopyright", "Copyright (C) LiuXiaolun 2026"
+			VALUE "OriginalFilename", "WebView2Demo.exe"
+			VALUE "ProductName", "WebView2Demo"
+			VALUE "ProductVersion", "0.0.1.0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x804, 1200
+	END
+END
