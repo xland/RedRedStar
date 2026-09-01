@@ -1,0 +1,40 @@
+#titleBar {
+    height: 32px;
+    line-height: 32px;
+    background: #FAFAFD;
+    display: flex;
+
+    #titleLabel {
+        font-size: 14px;
+        flex: 1;
+        color: #606060;
+        padding-left: 16px;
+        user-select: none;
+        align-items: center;
+    }
+
+    #btnBox {
+        display: flex;
+
+        .titleBtn {
+            color: #606060;
+            text-align: center;
+            width: 36px;
+
+            i {
+                font-size: 13px !important;
+            }
+        }
+
+        .titleBtn:hover {
+            background: #D9D9DB;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        #closeBtn:hover {
+            background: #E81123 !important;
+            color: #FFFFFF !important;
+        }
+    }
+}
