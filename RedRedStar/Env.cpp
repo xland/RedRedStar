@@ -112,6 +112,6 @@ HRESULT Env::onEnvReady(HRESULT result, ICoreWebView2Environment* env)
         ExitProcess(-1);
     }
     webViewEnv = env;
-    Window::create(L"https://app.localhost/index.html");
+    Window::create();
     return S_OK;
 }

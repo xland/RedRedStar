@@ -5,9 +5,9 @@ class Page;
 class Window
 {
 public:
-	Window(const std::wstring& url);
+	Window();
 	~Window();
-	static Window* create(const std::wstring& url);
+	static Window* create();
 	void show(const JsonObject& params, JsonObject& result);
 	void hittest(const JsonObject& params, JsonObject& result);
 	void minimize(const JsonObject& params, JsonObject& result);

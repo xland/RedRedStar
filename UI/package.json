@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@solidjs/web": "^2.0.0-rc.4",
+    "roosterjs": "^9.58.0",
     "solid-js": "^2.0.0-rc.4"
   }
 }

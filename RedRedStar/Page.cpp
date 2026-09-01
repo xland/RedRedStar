@@ -23,14 +23,13 @@ Page::Page(Window* win, ComPtr<ICoreWebView2>& webview) :win{ win }, webview{ we
 
     auto closeWindowCB = Callback<ICoreWebView2WindowCloseRequestedEventHandler>(this, &Page::onCloseWindow);
     webview->add_WindowCloseRequested(closeWindowCB.Get(), nullptr);
+
+	//webview->Navigate(L"https://app.localhost/index.html");
+	webview->Navigate(L"http://localhost:3000");
 }
 
 Page::~Page()
 {
-}
-void Page::navigate(const std::wstring& url)
-{
-    webview->Navigate(url.data());
 }
 
 void Page::emit(const JsonObject& eventData)

@@ -4,16 +4,16 @@
 #include "Page.h"
 
 std::unordered_map<HWND, std::unique_ptr<Window>> windows;
-Window::Window(const std::wstring& url) :url{ url }
+Window::Window()
 {
 }
 
 Window::~Window()
 {
 }
-Window* Window::create(const std::wstring& url)
+Window* Window::create()
 {
-    auto win = std::make_unique<Window>(url);
+    auto win = std::make_unique<Window>();
     win->createWin();
     auto result = win.get();
     windows.insert({ win->hwnd ,std::move(win) });
@@ -74,7 +74,7 @@ void Window::show(const JsonObject& params, JsonObject& result)
 void Window::hittest(const JsonObject& params, JsonObject& result)
 {
     ReleaseCapture();
-    auto val = (int)params.GetNamedNumber(L"val");
+    auto val = (int)params.GetNamedObject(L"args").GetNamedNumber(L"val");
     PostMessage(hwnd, WM_NCLBUTTONDOWN, val, 0);
 }
 void Window::minimize(const JsonObject& params, JsonObject& result)
@@ -104,7 +104,6 @@ HRESULT Window::onCtrlReady(HRESULT result, ICoreWebView2Controller* ctrl)
     GetClientRect(hwnd, &bounds);
     ctrl->put_Bounds(bounds);
     page = std::make_unique<Page>(this, webview);
-    page->navigate(url);
     return S_OK;
 }
 void Window::onSize(WPARAM wParam, LPARAM lParam)

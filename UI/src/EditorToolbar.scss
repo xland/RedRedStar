@@ -1,0 +1,128 @@
+#editorToolbar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  background: #fafafd;
+  border-bottom: 1px solid #d3e3fd;
+  flex-shrink: 0;
+  user-select: none;
+  position: relative;
+
+  .toolBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 4px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #555555;
+    font-size: 13px;
+    cursor: pointer;
+
+    &:hover {
+      background: #e8ecf4;
+    }
+
+    &.active {
+      background: #d3e3fd;
+      color: #0f52ba;
+    }
+
+    &:disabled {
+      opacity: 0.35;
+      cursor: default;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  .toolIcon {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  }
+
+  .toolSelect {
+    height: 26px;
+    max-width: 84px;
+    padding: 0 4px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: #555555;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background: #e8ecf4;
+    }
+
+    &:focus {
+      border-color: #d3e3fd;
+    }
+  }
+
+  .toolDivider {
+    width: 1px;
+    height: 18px;
+    margin: 0 6px;
+    background: #d8dde6;
+  }
+
+  .colorBtn {
+    position: relative;
+
+    input[type="color"] {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .toolLink {
+    position: absolute;
+    top: 36px;
+    left: 8px;
+    z-index: 10;
+    display: none;
+    align-items: center;
+    padding: 6px 8px;
+    background: #ffffff;
+    border: 1px solid #d3e3fd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    &.open {
+      display: flex;
+    }
+
+    input {
+      width: 260px;
+      padding: 4px 8px;
+      border: 1px solid #c9d4e4;
+      border-radius: 4px;
+      font-size: 12px;
+      outline: none;
+
+      &:focus {
+        border-color: #0f52ba;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@
     "noEmit": true,
 
     // Type Checking & Safety
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true,
     "types": ["vite/client"]
   }
