@@ -1,7 +1,6 @@
-export default function ContentBox() {
+import "./Category.scss";
+export default function Category() {
   return (
-    <>
-      <div></div>
-    </>
+    <div id="category"></div>
   );
 }

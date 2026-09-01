@@ -1,0 +1,24 @@
+#contentBox {
+  flex: 1 1 auto;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  .splitter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    z-index: 9;
+    cursor: ew-resize;
+    background: transparent;
+    touch-action: none;
+    user-select: none;
+    transition: background 0.15s ease;
+  }
+
+  .splitter:hover {
+    background: #bbbbbb;
+  }
+}

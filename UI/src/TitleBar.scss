@@ -3,6 +3,7 @@
     line-height: 32px;
     background: #FAFAFD;
     display: flex;
+    flex-shrink: 0;
 
     #titleLabel {
         font-size: 14px;

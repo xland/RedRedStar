@@ -1,3 +1,4 @@
+import "./StatusBar.scss";
 export default function StatusBar() {
-  return <div>Status Bar</div>;
+  return <div id="statusBar">Status Bar</div>;
 }
