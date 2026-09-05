@@ -12,5 +12,8 @@
     "sass-embedded": "^1.104.0",
     "typescript": "~6.0.2",
     "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "roosterjs": "^9.59.0"
   }
 }
