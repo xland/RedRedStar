@@ -1,0 +1,87 @@
+#borderLeft {
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 4px;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+#borderTop {
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 4px;
+  background: transparent;
+  cursor: ns-resize;
+}
+
+#borderRight {
+  position: absolute;
+  z-index: 999;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 4px;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+#borderBottom {
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 4px;
+  background: transparent;
+  cursor: ns-resize;
+}
+
+#cornerTopLeft {
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  cursor: nwse-resize;
+}
+
+#cornerTopRight {
+  position: absolute;
+  z-index: 999;
+  right: 0px;
+  top: 0px;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  cursor: nesw-resize;
+}
+
+#cornerBottomRight {
+  position: absolute;
+  z-index: 999;
+  right: 0px;
+  bottom: 0px;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  cursor: nwse-resize;
+}
+
+#cornerBottomLeft {
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  bottom: 0px;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  cursor: nesw-resize;
+}

@@ -25,7 +25,7 @@ Page::Page(Window* win, ComPtr<ICoreWebView2>& webview) :win{ win }, webview{ we
     webview->add_WindowCloseRequested(closeWindowCB.Get(), nullptr);
 
 	//webview->Navigate(L"https://app.localhost/index.html");
-	webview->Navigate(L"http://localhost:3000");
+	webview->Navigate(L"http://localhost:5173");
 }
 
 Page::~Page()

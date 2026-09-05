@@ -1,0 +1,50 @@
+#titleBar {
+  height: 32px;
+  line-height: 32px;
+  background: #fafafd;
+  display: flex;
+  flex-shrink: 0;
+  border-bottom: 1px solid #d3e3fd;
+  box-sizing: border-box;
+
+  #titleLabel {
+    font-size: 14px;
+    flex: 1;
+    color: #606060;
+    padding-left: 16px;
+    user-select: none;
+    align-items: center;
+  }
+
+  #btnBox {
+    display: flex;
+
+    .titleBtn {
+      color: #999999;
+      text-align: center;
+      width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 12px !important;
+      }
+    }
+
+    .titleBtn:hover {
+      background: #eeeeee;
+      color: #333333;
+      cursor: pointer;
+    }
+
+    #closeBtn:hover {
+      background: #e81123 !important;
+      color: #ffffff !important;
+    }
+    .suppressHover {
+      background: transparent !important;
+      color: #999999 !important;
+    }
+  }
+}
