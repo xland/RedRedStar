@@ -1,12 +1,13 @@
 import "./ArticleEditor.scss";
-import type { IEditor } from "roosterjs";
 import { Editor } from "roosterjs-content-model-core";
 import { WatermarkPlugin } from "roosterjs";
+import EditorToolbar from "./EditorToolbar";
 import msg from "./msg";
 export default function ArticleEditor() {
   msg.once("ready", () => {
     const contentDiv = document.querySelector<HTMLDivElement>("#articleContent")!;
-    const editor = new Editor(contentDiv, {
+    // 编辑器实例暂时不参与业务，先不保存引用；工具栏业务逻辑加回时再把实例提供给按钮
+    new Editor(contentDiv, {
       plugins: [new WatermarkPlugin("请输入文章内容…")],
       defaultSegmentFormat: {
         fontFamily: "微软雅黑",
@@ -17,6 +18,7 @@ export default function ArticleEditor() {
 
   return (
     <div id="articleEditor">
+      <EditorToolbar />
       <div id="articleContent"></div>
     </div>
   );

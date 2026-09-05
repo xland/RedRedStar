@@ -50,6 +50,11 @@ function setAttributes(el: Element, props: Props): void {
       else Object.assign((el as HTMLElement).style, raw as Partial<CSSStyleDeclaration>)
       continue
     }
+    if (k === "innerHTML") {
+      // innerHTML 是 DOM property，必须赋值而不是 setAttribute，否则 HTML 会被转义为纯文本属性
+      ;(el as HTMLElement).innerHTML = String(raw)
+      continue
+    }
     if (k.startsWith("on") && k.length > 2 && typeof raw === "function") {
       // onClick -> "click"；注意这是静态挂载，元素不会重渲染，请勿依赖闭包里的新值
       el.addEventListener(k.slice(2).toLowerCase(), raw as EventListener)
